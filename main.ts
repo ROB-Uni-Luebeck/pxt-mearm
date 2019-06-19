@@ -72,6 +72,10 @@ namespace meArm {
      */
     //% blockId=MeArm_init
     //% block="MeArm initialisieren. Verwendete Pins:|unten: %bottomPin|links: %leftPin|rechts: %rightPin|Greifer: %gripperPin"
+    //% bottomPin.defl=AnalogPin.C4
+    //% leftPin.defl=AnalogPin.C5
+    //% rightPin.defl=AnalogPin.C6
+    //% gripperPin.defl=AnalogPin.C16
     export function init(bottomPin: AnalogPin, leftPin: AnalogPin, rightPin: AnalogPin, gripperPin: AnalogPin) {
         m = new meArm(bottomPin, leftPin, rightPin, gripperPin)
     }
