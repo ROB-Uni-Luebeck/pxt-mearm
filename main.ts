@@ -82,7 +82,7 @@ namespace meArm {
      */
     //% blockId=servo_init
     //% block="Servo an Pin %pin|initialisieren"
-    //% blockHidden=true
+    //% advanced=true
     export function initServo(pin: AnalogPin) {
         pins.analogSetPeriod(pin, 20000)
     }
@@ -93,7 +93,7 @@ namespace meArm {
      */
     //% blockId=servo_deInit
     //% block="Servo an Pin %pin|deinitialisieren"
-    //% blockHidden=true
+    //% advanced=true
     export function deinitServo(pin: AnalogPin) {
         pins.analogWritePin(pin, 0)
     }
@@ -105,7 +105,7 @@ namespace meArm {
      */
     //% blockId=servo_move
     //% block="Servo an %pin|auf %value|Grad bewegen"
-    //% blockHidden=true
+    //% advanced=true
     //% value.min=0 value.max=180 value.defl=90
     export function moveServo(pin: AnalogPin, value: number) {
         if (value > 180) { value = 180 }
